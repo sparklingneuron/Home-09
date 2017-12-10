@@ -1,5 +1,26 @@
 .container {
-    max-width: 1170px;
+    max-width: $content-main-width;
     width: 100%;
     margin: 0 auto;
+}
+
+.members {
+    .container {
+        padding: 103px 0 99px;
+        border-bottom: 1px solid #dfdfdf;;
+    }
+}
+
+body > div.container {
+    padding: 97px 0 99px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-founder {
+    .container {
+        position: relative;
+        min-height: 373px;
+        background-color: $third-color;
+    }
 }

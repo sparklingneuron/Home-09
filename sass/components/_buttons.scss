@@ -24,3 +24,34 @@
     background-color: $secondary-color;
     color: $main-color;
 }
+
+.paginator {
+    margin: 0 0 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: right;
+
+        li {
+            float: left;
+            margin-right: 5px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            a {
+                display: block;
+                width: 35px;
+                height: 35px;
+                font-size: 24px;
+                line-height: 35px;
+                text-align: center;
+                color: $main-color;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
