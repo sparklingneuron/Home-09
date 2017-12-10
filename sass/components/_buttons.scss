@@ -1,0 +1,26 @@
+.btn {
+    display: inline-block;
+    padding: 0 44px;
+    min-height: 50px;
+    border-radius: 25px;
+    font-family: $main-font-face;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    line-height: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+    @extend .btn;
+    background-color: $main-color;
+    color: $secondary-color;
+}
+
+.alternative-btn {
+    @extend .btn;
+    background-color: $secondary-color;
+    color: $main-color;
+}

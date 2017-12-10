@@ -1,0 +1,130 @@
+.main-header {
+    .navigational-part {
+        padding: 11px 50px 13px;
+        background-color: $secondary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            float: left;
+            margin-right: 9px;
+        }
+
+        li:last-of-type {
+            margin-right: 0;
+        }
+
+        a {
+            display: block;
+            position: relative;
+            padding: 0 19px 0 18px;
+            font-family: $main-font-face;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $main-color;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0.65px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #ffffff;
+                opacity: 0;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .header-right-side {
+        display: flex;
+        align-items: center;
+
+        dl {
+            margin: 0 56px 0 0;
+
+            dt {
+                display: inline-block;
+                margin-right: 6px;
+                vertical-align: middle;
+
+                &::before {
+                    font-size: 24px;
+                    color: $main-color;
+                }
+            }
+
+            dd {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 42px 0 0;
+                font-family: "Open Sans", sans-serif;
+                color: #ffffff;
+                font-size: 14px;
+                text-transform: uppercase;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0;
+
+        a, img {
+            display: block;
+        }
+    }
+
+    .promotional-part {
+        background-image: url('../img/discover-background.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 208px 0 177px;
+        text-align: center;
+        border-bottom: 3px solid $secondary-color;
+
+        p {
+            margin: 0;
+
+            &:nth-of-type(1) {
+                font-family: 'Oswald', sans-serif;
+                font-size: 116px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $secondary-color;
+                margin-bottom: 5px;
+            }
+
+            &:nth-of-type(2) {
+                font-family: 'Great Vibes', cursive;
+                font-size: 80px;
+                color: $third-color;
+            }
+        }
+
+        .alternative-btn {
+            margin-top: 90px;
+        }
+    }
+}
